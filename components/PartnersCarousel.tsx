@@ -2,15 +2,19 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 const partners = [
-  { name: "IX Swap", logo: "IX-Swap.png", type: "DeFi Platform", color: "border-purple-400", shadow: "shadow-purple-400/20" },
-  { name: "Wikibit", logo: "Wikibit.png", type: "Crypto Data", color: "border-green-400", shadow: "shadow-green-400/20" },
-  { name: "Confest Asia", logo: "Confest-Asia.png", type: "Event / Summit", color: "border-pink-500", shadow: "shadow-pink-500/20" },
-  { name: "Super Web3", logo: "Super-Web3.png", type: "Web3 Summit", color: "border-cyan-400", shadow: "shadow-cyan-400/20" },
-  { name: "Blockchain Space", logo: "Blockchain-Space.png", type: "Guild Hub", color: "border-blue-400", shadow: "shadow-blue-400/20" },
-  { name: "Coins.ph", logo: "Coins-ph.png", type: "Exchange", color: "border-white", shadow: "shadow-white/20" },
-  { name: "YGG", logo: "YGG.png", type: "Web3 Games Summit", color: "border-blue-600", shadow: "shadow-blue-600/20" },
-  { name: "The Round Table", logo: "The-Round-Table.png", type: "Digital Community", color: "border-tamago-yellow", shadow: "shadow-tamago-yellow/20" },
-  { name: "SurGenCe", logo: "SurGenCe.png", type: "Web3 Solutions", color: "border-orange-500", shadow: "shadow-orange-500/20" },
+  { name: "Aquafarm", logo: "/logos/Aquafarm.png", type: "GameFi", color: "border-blue-400", shadow: "shadow-blue-400/20" },
+  { name: "Arcus", logo: "/logos/Arcus.png", type: "GameFi", color: "border-yellow-400", shadow: "shadow-yellow-400/20" },
+  { name: "Bitrue", logo: "/logos/Bitrue.png", type: "Exchange", color: "border-blue-600", shadow: "shadow-blue-600/20" },
+  { name: "Heroes of Mavia", logo: "/logos/Heroes of Mavia.png", type: "GameFi", color: "border-red-500", shadow: "shadow-red-500/20" },
+  { name: "Huobi", logo: "/logos/Huobi.png", type: "Exchange", color: "border-blue-500", shadow: "shadow-blue-500/20" },
+  { name: "KOF Arena", logo: "/logos/Kof.png", type: "GameFi", color: "border-purple-500", shadow: "shadow-purple-500/20" },
+  { name: "LBank", logo: "/logos/LBank.png", type: "Exchange", color: "border-orange-400", shadow: "shadow-orange-400/20" },
+  { name: "Netmarble", logo: "/logos/Netmarble.png", type: "Game Publisher", color: "border-gray-400", shadow: "shadow-gray-400/20" },
+  { name: "p2eAll", logo: "/logos/p2eall.png", type: "GameFi Platform", color: "border-pink-400", shadow: "shadow-pink-400/20" },
+  { name: "Perplay", logo: "/logos/Perplay.png", type: "GameFi", color: "border-purple-400", shadow: "shadow-purple-400/20" },
+  { name: "Playermon", logo: "/logos/Playermon.png", type: "GameFi", color: "border-yellow-500", shadow: "shadow-yellow-500/20" },
+  { name: "Thetan Arena", logo: "/logos/Thetan Arena.png", type: "GameFi", color: "border-green-400", shadow: "shadow-green-400/20" },
+  { name: "Wikibit", logo: "/logos/Wikibit.png", type: "Crypto Data", color: "border-green-500", shadow: "shadow-green-500/20" },
 ];
 
 const PartnersCarousel: React.FC = () => {
@@ -190,9 +194,9 @@ const PartnersCarousel: React.FC = () => {
                      {isActive && <div className="absolute inset-0 bg-white/5 blur-2xl rounded-full"></div>}
                      
                      <img 
-                        src={`/logos/${partner.logo}`} 
+                        src={partner.logo} 
                         alt={partner.name}
-                        className="max-w-[80%] max-h-[120px] object-contain drop-shadow-xl z-10"
+                        className="max-w-full max-h-[240px] object-contain drop-shadow-xl z-10"
                         onError={(e) => {
                             e.currentTarget.style.display = 'none';
                             const parent = e.currentTarget.parentElement;

@@ -31,7 +31,7 @@ const featuredGuilds = [
 const partnerGuilds = [
   { name: "Alrocknation", type: "Esports Org", logo: "Alrocknation.png" },
   { name: "Crypto Master Trader", type: "Trading Club", logo: "Crypto-Master-Trader-Club.png" },
-  { name: "Playermon", type: "Game Guild", logo: "Playermon.png" }
+  { name: "Playermon", type: "Game Guild", logo: "/logos/Playermon.png" }
 ];
 
 const Guilds: React.FC = () => {
@@ -174,7 +174,7 @@ const Guilds: React.FC = () => {
              <div key={idx} className="bg-black/20 border border-white/5 hover:border-white/20 rounded-xl p-4 flex items-center gap-4 transition-all hover:scale-[1.02]">
                 <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center shrink-0 p-2">
                    <img 
-                      src={`/logos/${partner.logo}`} 
+                      src={partner.logo} 
                       alt={partner.name}
                       className="w-full h-full object-contain"
                       onError={(e) => {

@@ -12,9 +12,9 @@ const categories = [
     color: "text-blue-400",
     bg: "bg-blue-400/10",
     partners: [
-      { name: "Bitrue", logo: "Bitrue.png" },
-      { name: "Huobi", logo: "Huobi.png" },
-      { name: "LBank", logo: "LBank.png" },
+      { name: "Bitrue", logo: "/logos/Bitrue.png" },
+      { name: "Huobi", logo: "/logos/Huobi.png" },
+      { name: "LBank", logo: "/logos/LBank.png" },
     ]
   },
   {
@@ -24,14 +24,14 @@ const categories = [
     color: "text-tamago-accent",
     bg: "bg-tamago-accent/10",
     partners: [
-      { name: "KOF Arena", logo: "KOF-Arena.png" },
-      { name: "Netmarble", logo: "Netmarble.png" },
-      { name: "Perplay", logo: "Perplay.png" },
-      { name: "Thetan Arena", logo: "Thetan-Arena.png" },
-      { name: "Arcus", logo: "Arcus.png" },
-      { name: "Heroes of Mavia", logo: "Heroes-of-Mavia.png" },
-      { name: "Playermon", logo: "Playermon.png" },
-      { name: "Aqua Farm", logo: "Aqua-Farm.png" },
+      { name: "KOF Arena", logo: "/logos/Kof.png" },
+      { name: "Netmarble", logo: "/logos/Netmarble.png" },
+      { name: "Perplay", logo: "/logos/Perplay.png" },
+      { name: "Thetan Arena", logo: "/logos/Thetan Arena.png" },
+      { name: "Arcus", logo: "/logos/Arcus.png" },
+      { name: "Heroes of Mavia", logo: "/logos/Heroes of Mavia.png" },
+      { name: "Playermon", logo: "/logos/Playermon.png" },
+      { name: "Aqua Farm", logo: "/logos/Aquafarm.png" },
     ]
   },
   {
@@ -41,8 +41,8 @@ const categories = [
     color: "text-tamago-yellow",
     bg: "bg-tamago-yellow/10",
     partners: [
-      { name: "P2EAll.com", logo: "P2EAll.png" },
-      { name: "Wikibit", logo: "Wikibit.png" },
+      { name: "P2EAll.com", logo: "/logos/p2eall.png" },
+      { name: "Wikibit", logo: "/logos/Wikibit.png" },
       { name: "Youtube", logo: "Youtube.png" },
       { name: "PlayToEarn.net", logo: "PlayToEarn.png" },
     ]
@@ -267,7 +267,7 @@ const Partners: React.FC = () => {
                   
                   <div className="relative z-10 w-full aspect-[3/2] flex items-center justify-center">
                      <img 
-                        src={`/logos/${partner.logo}`} 
+                        src={partner.logo} 
                         alt={partner.name}
                         className="w-full h-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                         onError={(e) => {
