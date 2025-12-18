@@ -16,7 +16,13 @@ const Footer: React.FC = () => {
               <div className="flex items-center gap-4">
                  <div className="relative group cursor-pointer hover:scale-110 transition-transform duration-300">
                     <div className="absolute inset-0 bg-tamago-yellow/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <Logo className="w-12 h-12 relative z-10" />
+                    <img
+                      alt="Brgy Tamago Logo"
+                      role="img"
+                      aria-label="Brgy Tamago Logo"
+                      src="/src/assets/icon-bt/logo.png"
+                      className="w-12 sm:w-14 md:w-16 h-auto relative z-10 drop-shadow-2xl max-w-full"
+                    />
                  </div>
                  <div className="flex flex-col">
                     <span className="text-2xl font-display font-black tracking-tighter leading-none text-white">BRGY</span>

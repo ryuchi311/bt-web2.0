@@ -95,15 +95,16 @@ const App: React.FC = () => {
             }}
           >
             {/* Nav Logo Component */}
-            <div className="relative group-hover:scale-110 transition-transform duration-300">
+              <div className="relative group-hover:scale-110 transition-transform duration-300">
               <div className="absolute inset-0 bg-tamago-yellow/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <Logo className="w-10 h-10 md:w-12 md:h-12 relative z-10" />
+              <Logo
+                src="/src/assets/icon-bt/bt-logo.png"
+                className="w-10 h-10 md:w-12 md:h-12 relative z-10"
+                style={{ width: '135px', height: '47px' }}
+              />
             </div>
             
-            <div className="flex flex-col">
-              <span className="text-xl md:text-2xl font-display font-black tracking-tighter leading-none">BRGY</span>
-              <span className="text-xs md:text-sm font-display font-bold text-tamago-yellow tracking-widest leading-none">TAMAGO</span>
-            </div>
+            
           </div>
 
           {/* Desktop Nav */}
@@ -260,7 +261,13 @@ const Hero: React.FC<{ setView: (view: ViewState) => void }> = ({ setView }) => 
           {/* Main Logo Display */}
           <div className="relative mb-6 group">
             <div className="absolute inset-0 bg-tamago-yellow/20 rounded-full blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-            <Logo className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative z-10 drop-shadow-2xl animate-bounce-short hover:scale-105 transition-transform duration-300" />
+            <img
+              alt="Brgy Tamago Logo"
+              className="w-24 sm:w-32 md:w-40 h-auto relative z-10 drop-shadow-2xl animate-bounce-short hover:scale-105 transition-transform duration-300 max-w-full"
+              role="img"
+              aria-label="Brgy Tamago Logo"
+              src="/src/assets/icon-bt/logo.png"
+            />
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black tracking-tight leading-[0.95] md:leading-[0.9] w-full">
