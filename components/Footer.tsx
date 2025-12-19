@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Send, Facebook, Video, X } from 'lucide-react';
+import { Mail, Send, Facebook, Video, X, Instagram, Linkedin, Users } from 'lucide-react';
 import { Logo } from './Logo';
 
 const Footer: React.FC = () => {
@@ -44,22 +44,27 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-center md:items-end gap-6">
                <div className="text-center md:text-right">
                    <span className="text-xs font-mono text-gray-500 uppercase tracking-widest font-bold block mb-4">Join the Neighborhood</span>
-                   <div className="flex items-center gap-4">
-                      {[
-                          { icon: Send, href: "#", color: "hover:text-[#0088cc]", border: "hover:border-[#0088cc]/30", label: "Telegram" },
-                          { icon: Facebook, href: "#", color: "hover:text-[#1877F2]", border: "hover:border-[#1877F2]/30", label: "Facebook" },
-                          { icon: X, href: "#", color: "hover:text-white", border: "hover:border-white/30", label: "X" },
-                          { icon: Video, href: "#", color: "hover:text-[#ff0050]", border: "hover:border-[#ff0050]/30", label: "TikTok" }
-                      ].map((social, idx) => (
-                        <a 
-                            key={idx}
-                            href={social.href} 
-                            className={`w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 transition-all hover:scale-110 hover:bg-white/10 ${social.color} ${social.border}`}
-                            aria-label={social.label}
-                        >
-                            <social.icon size={20} />
-                        </a>
-                      ))}
+                    <div className="flex items-center gap-4">
+                    {[
+                      { icon: Send, href: "https://t.me/tamagowarriors", color: "hover:text-[#0088cc]", border: "hover:border-[#0088cc]/30", label: "Telegram" },
+                      { icon: Facebook, href: "https://www.facebook.com/BRGYTamago", color: "hover:text-[#1877F2]", border: "hover:border-[#1877F2]/30", label: "Facebook" },
+                      { icon: X, href: "https://x.com/BRGYTamago", color: "hover:text-white", border: "hover:border-white/30", label: "X" },
+                      { icon: Video, href: "https://www.tiktok.com/@brgytamago", color: "hover:text-[#ff0050]", border: "hover:border-[#ff0050]/30", label: "TikTok" },
+                      { icon: Instagram, href: "https://www.instagram.com/brgytamago/", color: "hover:text-pink-400", border: "hover:border-pink-400/30", label: "Instagram" },
+                      { icon: Users, href: "https://discord.com/invite/GD8sKMxEpk", color: "hover:text-violet-400", border: "hover:border-violet-400/30", label: "Discord" },
+                      { icon: Linkedin, href: "https://www.linkedin.com/company/brgy-tamago/", color: "hover:text-[#0077B5]", border: "hover:border-[#0077B5]/30", label: "LinkedIn" }
+                    ].map((social, idx) => (
+                    <a 
+                      key={idx}
+                      href={social.href} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 transition-all hover:scale-110 hover:bg-white/10 ${social.color} ${social.border}`}
+                      aria-label={social.label}
+                    >
+                      <social.icon size={20} />
+                    </a>
+                    ))}
                    </div>
                </div>
                

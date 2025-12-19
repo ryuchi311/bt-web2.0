@@ -10,8 +10,7 @@ import Partners from './components/Partners';
 import HeroCarousel from './components/HeroCarousel';
 import PartnersCarousel from './components/PartnersCarousel';
 import Footer from './components/Footer';
-import { Logo } from './components/Logo';
-import { Gamepad2, Feather, Briefcase, Home, Github, Twitter, Menu, X, ArrowRight, TrendingUp, ShieldCheck, Sparkles, Rocket, Globe, Users, Handshake, Swords, Hash, ChevronDown } from 'lucide-react';
+import { Gamepad2, Feather, Briefcase, Home, Github, Twitter, Menu, X, ArrowRight, TrendingUp, ShieldCheck, Sparkles, Rocket, Globe, Users, Handshake, Swords, Hash, ChevronDown, Facebook, Instagram, Linkedin, Send, Video } from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.HOME);
@@ -96,13 +95,15 @@ const App: React.FC = () => {
           >
             {/* Nav Logo Component */}
               <div className="relative group-hover:scale-110 transition-transform duration-300">
-              <div className="absolute inset-0 bg-tamago-yellow/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <Logo
-                src="/src/assets/icon-bt/bt-logo.png"
-                className="w-10 h-10 md:w-12 md:h-12 relative z-10"
-                style={{ width: '135px', height: '47px' }}
-              />
-            </div>
+                <div className="absolute inset-0 bg-tamago-yellow/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <img
+                  alt="Brgy Tamago Logo"
+                  role="img"
+                  aria-label="Brgy Tamago Logo"
+                  src="/src/assets/icon-bt/bt-logo.png"
+                  className="w-20 sm:w-24 md:w-36 lg:w-[135px] h-auto relative z-10 max-w-full"
+                />
+              </div>
             
             
           </div>
@@ -176,11 +177,11 @@ const App: React.FC = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
-            <button className="bg-tamago-accent hover:bg-red-500 text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors shadow-[0_0_15px_rgba(242,37,36,0.5)]">
+            <a href="https://www.facebook.com/BRGYTamago" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook"><Facebook size={20} /></a>
+            <a href="https://x.com/BRGYTamago" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter"><X size={20} /></a>
+            <a href="https://t.me/tamagowarriors" target="_blank" rel="noopener noreferrer" className="bg-tamago-accent hover:bg-red-500 text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors shadow-[0_0_15px_rgba(242,37,36,0.5)]" aria-label="Join Community - Telegram">
               Join Community
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -219,15 +220,15 @@ const App: React.FC = () => {
                 <NavItem view={ViewState.GAME} icon={Gamepad2} label="Arcade" />
             </div>
 
-            <div className="mt-auto pt-8">
-               <button className="w-full bg-tamago-accent py-4 rounded-xl font-bold text-white shadow-lg mb-4">
-                  Join Discord Community
-               </button>
-               <div className="flex justify-center gap-6 text-gray-400">
-                  <Github size={24} />
-                  <Twitter size={24} />
-               </div>
+          <div className="mt-auto pt-8">
+            <button className="w-full bg-tamago-accent py-4 rounded-xl font-bold text-white shadow-lg mb-4">
+              Join Discord Community
+            </button>
+            <div className="flex justify-center gap-6 text-gray-400">
+              <a href="https://www.facebook.com/BRGYTamago" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white"><Facebook size={24} /></a>
+              <a href="https://x.com/BRGYTamago" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white"><X size={24} /></a>
             </div>
+          </div>
           </div>
         )}
       </nav>
