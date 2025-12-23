@@ -43,8 +43,8 @@ const categories = [
     partners: [
       { name: "P2EAll.com", logo: "/logos/p2eall.png" },
       { name: "Wikibit", logo: "/logos/Wikibit.png" },
-      { name: "Youtube", logo: "Youtube.png" },
-      { name: "PlayToEarn.net", logo: "PlayToEarn.png" },
+      { name: "Youtube", logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=Youtube" },
+      { name: "PlayToEarn.net", logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=PlayToEarn" },
     ]
   },
   {

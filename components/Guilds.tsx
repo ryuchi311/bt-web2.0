@@ -5,7 +5,7 @@ const featuredGuilds = [
   {
     name: "Blockchain Space",
     category: "Guild Hub",
-    logo: "Blockchain-Space.png",
+    logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=Blockchain+Space",
     members: "100K+",
     description: "The leading guild hub of the metaverse, empowering play-to-earn guilds to scale.",
     color: "text-blue-400"
@@ -13,7 +13,7 @@ const featuredGuilds = [
   {
     name: "AAG",
     category: "Metaverse Guild",
-    logo: "AAG.png",
+    logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=AAG",
     members: "50K+",
     description: "Creating economic freedom worldwide through the metaverse economy and P2E gaming.",
     color: "text-green-400"
@@ -21,7 +21,7 @@ const featuredGuilds = [
   {
     name: "Davao Defi Community",
     category: "Regional Hub",
-    logo: "Davao-Defi-Community.png",
+    logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=DDC",
     members: "20K+",
     description: "The premier DeFi and Blockchain education community in the southern Philippines.",
     color: "text-yellow-400"
@@ -29,8 +29,8 @@ const featuredGuilds = [
 ];
 
 const partnerGuilds = [
-  { name: "Alrocknation", type: "Esports Org", logo: "Alrocknation.png" },
-  { name: "Crypto Master Trader", type: "Trading Club", logo: "Crypto-Master-Trader-Club.png" },
+  { name: "Alrocknation", type: "Esports Org", logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=Alrocknation" },
+  { name: "Crypto Master Trader", type: "Trading Club", logo: "https://placehold.co/200x200/1a1a1a/ffffff?text=CMTC" },
   { name: "Playermon", type: "Game Guild", logo: "/logos/Playermon.png" }
 ];
 
